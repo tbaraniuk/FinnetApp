@@ -2,6 +2,7 @@ namespace EvolutionaryArchitecture.Fitnet.Common.ErrorHandling;
 
 using BusinessRulesEngine;
 using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 internal sealed class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger) : IExceptionHandler

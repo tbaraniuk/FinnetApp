@@ -1,6 +1,6 @@
 namespace EvolutionaryArchitecture.Fitnet.Passes.RegisterPass.Events;
 
-using EvolutionaryArchitecture.Fitnet.Common.Events;
+using EvolutionaryArchitecture.Fitnet.Abstractions.Events;
 
 internal record PassRegisteredEvent(Guid Id, Guid PassId, DateTimeOffset OccurredDateTime) : IIntegrationEvent
 {
