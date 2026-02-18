@@ -1,8 +1,8 @@
 namespace EvolutionaryArchitecture.Fitnet.Passes.MarkPassAsExpired;
 
 using Data.Database;
-using Events;
-using EvolutionaryArchitecture.Fitnet.Common.Events.EventBus;
+using EvolutionaryArchitecture.Fitnet.Abstractions.EventContracts;
+using EvolutionaryArchitecture.Fitnet.Abstractions.Events.EventBus;
 
 internal static class MarkPassAsExpiredEndpoint
 {

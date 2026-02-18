@@ -1,12 +1,12 @@
 using EvolutionaryArchitecture.Fitnet.Common.Clock;
 using EvolutionaryArchitecture.Fitnet.Common.Documentation;
 using EvolutionaryArchitecture.Fitnet.Common.ErrorHandling;
-using EvolutionaryArchitecture.Fitnet.Common.Events.EventBus;
+using EvolutionaryArchitecture.Fitnet.Abstractions.Events.EventBus;
 using EvolutionaryArchitecture.Fitnet.Common.Validation.Requests;
 using EvolutionaryArchitecture.Fitnet.Contracts;
-using EvolutionaryArchitecture.Fitnet.Offers;
 using EvolutionaryArchitecture.Fitnet.Passes;
 using EvolutionaryArchitecture.Fitnet.Reports;
+using EvolutionaryArchitecture.Modules.Offers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,8 +20,8 @@ builder.Services.AddClock();
 
 builder.Services.AddPasses(builder.Configuration);
 builder.Services.AddContracts(builder.Configuration);
-builder.Services.AddOffers(builder.Configuration);
 builder.Services.AddReports(builder.Configuration);
+builder.Services.AddOffers(builder.Configuration);
 
 await using var app = builder.Build();
 

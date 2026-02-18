@@ -1,6 +1,6 @@
 namespace EvolutionaryArchitecture.Fitnet.IntegrationTests.Common.TestEngine.IntegrationEvents.Handlers;
 
-using EvolutionaryArchitecture.Fitnet.Common.Events;
+using EvolutionaryArchitecture.Fitnet.Abstractions.Events;
 using MediatR;
 
 internal sealed class IntegrationEventHandlerScope<TIntegrationEvent> : IDisposable

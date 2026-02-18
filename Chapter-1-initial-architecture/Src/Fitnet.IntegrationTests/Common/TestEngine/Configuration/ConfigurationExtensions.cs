@@ -1,8 +1,8 @@
 namespace EvolutionaryArchitecture.Fitnet.IntegrationTests.Common.TestEngine.Configuration;
 
 using System.Reflection;
-using EvolutionaryArchitecture.Fitnet.Common.Events.EventBus;
-using EvolutionaryArchitecture.Fitnet.Common.Events.EventBus.InMemory;
+using EvolutionaryArchitecture.Fitnet.Abstractions.Events.EventBus;
+using EvolutionaryArchitecture.Fitnet.Abstractions.Events.EventBus.InMemory;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 

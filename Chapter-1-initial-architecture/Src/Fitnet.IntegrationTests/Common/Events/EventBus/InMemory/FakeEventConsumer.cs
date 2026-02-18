@@ -1,6 +1,6 @@
-namespace EvolutionaryArchitecture.Fitnet.IntegrationTests.Common.Events.EventBus.InMemory;
+namespace EvolutionaryArchitecture.Fitnet.IntegrationTests.Abstractions.Events.EventBus.InMemory;
 
-using EvolutionaryArchitecture.Fitnet.Common.Events;
+using EvolutionaryArchitecture.Fitnet.Abstractions.Events;
 
 internal sealed class TestEventConsumer : IIntegrationEventHandler<FakeEvent>
 {
