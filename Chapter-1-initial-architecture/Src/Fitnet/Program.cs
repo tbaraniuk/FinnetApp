@@ -7,6 +7,8 @@ using EvolutionaryArchitecture.Fitnet.Contracts;
 using EvolutionaryArchitecture.Fitnet.Passes;
 using EvolutionaryArchitecture.Fitnet.Reports;
 using EvolutionaryArchitecture.Modules.Offers;
+using EvolutionaryArchitecture.Modules.Offers.Infrastructure.Database;
+using EvolutionaryArchitecture.Modules.Offers.Infrastructure.Saga;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +20,14 @@ builder.Services.AddEventBus();
 builder.Services.AddRequestsValidations();
 builder.Services.AddClock();
 
+builder.Services.AddScoped<PassRenewalHandler>();
+
 builder.Services.AddPasses(builder.Configuration);
 builder.Services.AddContracts(builder.Configuration);
 builder.Services.AddReports(builder.Configuration);
 builder.Services.AddOffers(builder.Configuration);
+
+builder.Services.AddHostedService<OutboxProcessor>();
 
 await using var app = builder.Build();
 

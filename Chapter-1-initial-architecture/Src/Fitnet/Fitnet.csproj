@@ -36,6 +36,7 @@
 
     <ItemGroup>
       <ProjectReference Include="../Fitnet.Abstractions/Fitnet.Abstractions.csproj" />
+      <ProjectReference Include="../Modules/PassRenewal/PassRenewal.csproj" />
       <ProjectReference Include="../Modules/Offers/Offers.csproj" />
     </ItemGroup>
       
