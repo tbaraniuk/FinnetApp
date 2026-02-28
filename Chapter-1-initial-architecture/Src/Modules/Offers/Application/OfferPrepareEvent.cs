@@ -1,4 +1,4 @@
-namespace Modules.Offers.Application;
+namespace EvolutionaryArchitecture.Modules.Offers.Application;
 
 using EvolutionaryArchitecture.Fitnet.Abstractions.Events;
 

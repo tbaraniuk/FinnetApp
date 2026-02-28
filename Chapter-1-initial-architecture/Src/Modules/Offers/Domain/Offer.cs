@@ -1,6 +1,6 @@
 namespace EvolutionaryArchitecture.Modules.Offers.Domain;
 
-internal sealed class Offer
+public sealed class Offer
 {
     public Guid Id { get; init; }
     public Guid CustomerId { get; init; }
